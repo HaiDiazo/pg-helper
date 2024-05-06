@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pg-helper"
+version = "0.1.8"
+description = "Helper for insert into PostgreSQL"
+authors = ["Nathaniela Aptanta Parama <nathan@jkt1.ebdesk.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "0.6.0"
+sqlalchemy = "2.0.22"
+
+
+[[tool.poetry.source]]
+name = "ebdesk"
+url = "http://192.168.20.127:6060/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
